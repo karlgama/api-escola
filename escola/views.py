@@ -1,6 +1,6 @@
-from django.https import JsonResponse
+from django.http import JsonResponse
 
-def alunos(resquest):
+def alunos(request):
     if request.method == 'GET':
         aluno = {"nome":"teste"}
         return JsonResponse(aluno)
